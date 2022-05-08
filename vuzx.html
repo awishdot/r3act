@@ -1,29 +1,29 @@
 <html>
-	<head>
 
-		<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-		<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-			<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<head>
+    <title>React App</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
 
-		<link rel="stylesheet" href="index.css">
-	</head>
-	<body>
-		<div id="mydiv"></div>
-		<script text="text/babel">
-      function Test()
-      {
-        const bla=()=>{alert("Hello React")};
-        return <button onClick={bla}>Click Me</button>;
-      }
-      class Hello extends React.Component {
+<body>
+    <div id="mydiv">
+    </div>
+    <script type="text/babel">
+    function Test()
+    {
+        const bla=()=>{alert("Hello React")}
+        return <button onClick={bla}>Click Me</button>
+    }
+    class Hello extends React.Component{
         render()
         {
-          return <div>Hello React Code <Test /></div>
+          return <div>Hello React code <Test /></div>  
         }
-      }
-      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
-
+    }
+    ReactDOM.render(<Hello />,document.getElementById('mydiv'))
     </script>
-	<body>
+</body>
 
 </html>
